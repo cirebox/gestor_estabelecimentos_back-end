@@ -1,29 +1,11 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+API para gestão de estabelecimentos
 
-### What is this repository for? ###
+### Servidor de desenvolvimento ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+Rode o comando `npm run dev` para iniciar o servidor `http://localhost:3100/`
 
-### How do I get set up? ###
+### Testes ###
 
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+Para rodar as rotinas de teste, rode o comando `npm run test`
