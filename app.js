@@ -19,6 +19,9 @@ app.use(cookieParser());
 //favicon
 app.use(favicon(__dirname + "/public/imagens/favicon.ico"));
 
+app.use(express.json())
+// app.use(express.urlencoded({ extended: true}))
+
 //Carregar as rotas
 const indexRoute = require("./src/routes/index-route");
 const v1 = require("./src/routes/v1");

@@ -1,6 +1,6 @@
 "use strict";
-const model = require("../models/index");
-const estabelecimento = model.estabelecimento;
+const models = require("../models/index");
+const estabelecimento = models.estabelecimento;
 
 exports.valida = async (data) => {
   let modelBuild = estabelecimento.build(data);
@@ -8,12 +8,12 @@ exports.valida = async (data) => {
   return validateErrors;
 };
 
-exports.list = () => {
-  return estabelecimento.findAll();
+exports.list = async() => {
+  return await estabelecimento.findAll();
 }
 
-exports.create = data => {
-  return estabelecimento.create(data);
+exports.create = async(data) => {
+  return await estabelecimento.create(data);
 };
 
 exports.update = async (data) => {

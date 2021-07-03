@@ -7,11 +7,11 @@
   "scripts": {
     "migrate": "npx sequelize db:migrate",
     "clean": "npx sequelize db:migrate:undo:all",
-    "dev": "nodemon ./bin/server.js --ignore __tests__",
-    "pretest": "npx sequelize db:migrate",
+    "pretest": "NODE_ENV=test sequelize db:migrate",
     "test": "NODE_ENV=test jest",
-    "posttest": "npx sequelize db:migrate:undo:all",
-    "start": "node ./bin/server.js --ignore __tests__",
+    "posttest": "NODE_ENV=test sequelize db:migrate:undo:all",
+    "dev": "nodemon ./bin/server.js --ignore __tests__",
+    "start": "node ./bin/server.js",
     "build": "sucrase ./src -d ./dist --transforms imports"
   },
   "repository": {
@@ -22,6 +22,7 @@
   "license": "MIT",
   "homepage": "https://bitbucket.org/cirebox/gestorapi#readme",
   "dependencies": {
+    "add": "^2.0.6",
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
@@ -33,8 +34,7 @@
     "sequelize": "^6.6.4",
     "serve-favicon": "^2.5.0"
   },
-  "devDependencies": {
-    "factory-girl": "^5.0.4",
+  "devDependencies": {    
     "faker": "^5.5.3",
     "jest": "^27.0.6",
     "nodemon": "^2.0.9",

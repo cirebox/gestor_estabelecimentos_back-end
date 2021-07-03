@@ -3,7 +3,7 @@ const app = require("../app");
 const debug = require("debug")("GestorEstabelecimento:server");
 const http = require("http");
 
-const port = normalizePort(process.env.PORT || "4100");
+const port = normalizePort(process.env.PORT || "3100");
 app.set("port", port);
 
 const server = http.createServer(app);
@@ -32,11 +32,11 @@ function onError(error) {
   switch (error.code) {
     case "EACCES":
       console.error(bind + " requer privilegios elevados");
-      process.exit(1);
+      // process.exit(1);
       break;
     case "EADDRINUSE":
       console.error("A porta " + bind + " já está sendo usada");
-      process.exit(1);
+      // process.exit(1);
       break;
     default:
       throw error;

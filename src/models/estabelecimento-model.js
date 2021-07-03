@@ -9,9 +9,19 @@ module.exports = (sequelize, DataTypes) => {
       },
       nome: {
         type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+          notEmpty: {
+            msg: "Esse campo não pode ser vazio ou nulo!"
+          }
+        },
       },
       cnpj: {
         type: DataTypes.STRING,
+        allowNull: false,
+        notEmpty: {
+          msg: "Esse campo não pode ser vazio ou nulo!"
+        }    
       },
       telefone: {
         type: DataTypes.STRING,

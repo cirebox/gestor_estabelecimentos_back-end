@@ -2,15 +2,18 @@ module.exports = {
   bail: true,
   clearMocks: true,
   collectCoverage: true,
-  collectCoverageFrom: ["src/**/*.js"],
-  coverageDirectory: "__test__/coverage",
+  coverageDirectory: "coverage",
   coveragePathIgnorePatterns: [
-    "/node_modules/"
+    "\\\\node_modules\\\\"
   ],
-  coverageReporters: ['text', 'lcov'],
-  testEnvironment: "node",
-  testMatch: ["**/__test__/**/*.test.js?(x)"],
+  coverageProvider: "v8",
+  testEnvironment:"node",
+  testMatch: [
+    "**/__tests__/**/*.test.js?(x)",    
+  ],
   testPathIgnorePatterns: [
-    "/node_modules/"
+    "\\\\node_modules\\\\"
   ],
+  // Whether to use watchman for file crawling
+  // watchman: true,
 };

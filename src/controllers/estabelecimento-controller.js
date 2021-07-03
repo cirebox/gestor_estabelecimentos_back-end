@@ -43,6 +43,7 @@ exports.add = async (req, res, next) => {
         field,
         message
       });
+      return;
     }
 
     var data = await repository.create(req.body);
@@ -111,7 +112,7 @@ exports.update = async (req, res) => {
 };
 
 exports.delete = async (req, res) => {
-  try {
+  try {    
     var data = await repository.delete(req.params.id);
     if (!data) {
       res.status(204).send({
