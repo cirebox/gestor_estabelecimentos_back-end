@@ -1,27 +1,28 @@
-'use strict'
+"use strict";
 module.exports = (sequelize, DataTypes) => {
   const Estabelecimento = sequelize.define(
-    'estabelecimento', {
+    "estabelecimento",
+    {
       id: {
         type: DataTypes.INTEGER,
         autoIncrement: true,
-        primaryKey: true
+        primaryKey: true,
       },
       nome: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           notEmpty: {
-            msg: "Esse campo não pode ser vazio ou nulo!"
-          }
+            msg: "Esse campo não pode ser vazio ou nulo!",
+          },
         },
       },
       cnpj: {
         type: DataTypes.STRING,
         allowNull: false,
         notEmpty: {
-          msg: "Esse campo não pode ser vazio ou nulo!"
-        }    
+          msg: "Esse campo não pode ser vazio ou nulo!",
+        },
       },
       telefone: {
         type: DataTypes.STRING,
@@ -30,6 +31,9 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
       },
       cep: {
+        type: DataTypes.STRING,
+      },
+      uf: {
         type: DataTypes.STRING,
       },
       cidade: {
@@ -48,9 +52,10 @@ module.exports = (sequelize, DataTypes) => {
       complemento: {
         type: DataTypes.STRING,
       },
-    }, {
-      modelName: 'estabelecimento',
-      tableName: 'estabelecimento',
+    },
+    {
+      modelName: "estabelecimento",
+      tableName: "estabelecimento",
     }
   );
   return Estabelecimento;
