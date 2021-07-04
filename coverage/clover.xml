@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1625366701806" clover="3.2.0">
-  <project timestamp="1625366701806" name="All files">
+<coverage generated="1625439826965" clover="3.2.0">
+  <project timestamp="1625439826965" name="All files">
     <metrics statements="717" coveredstatements="566" conditionals="75" coveredconditionals="47" methods="26" coveredmethods="26" elements="818" coveredelements="639" complexity="0" loc="717" ncloc="717" packages="10" files="17" classes="17"/>
     <package name="__tests__.factories">
       <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -481,9 +481,9 @@
       </file>
     </package>
     <package name="src.model">
-      <metrics statements="160" coveredstatements="157" conditionals="11" coveredconditionals="9" methods="5" coveredmethods="5"/>
+      <metrics statements="167" coveredstatements="164" conditionals="11" coveredconditionals="9" methods="5" coveredmethods="5"/>
       <file name="estabelecimento-model.js" path="C:\Users\eric_\Desktop\TesteAdmissao\VaiBem\GestorEstabelecimento\back-end\src\model\estabelecimento-model.js">
-        <metrics statements="57" coveredstatements="57" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <metrics statements="62" coveredstatements="62" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="3" count="4" type="stmt"/>
@@ -541,6 +541,11 @@
         <line num="55" count="4" type="stmt"/>
         <line num="56" count="4" type="stmt"/>
         <line num="57" count="4" type="stmt"/>
+        <line num="58" count="4" type="stmt"/>
+        <line num="59" count="4" type="stmt"/>
+        <line num="60" count="4" type="stmt"/>
+        <line num="61" count="4" type="stmt"/>
+        <line num="62" count="4" type="stmt"/>
       </file>
       <file name="index.js" path="C:\Users\eric_\Desktop\TesteAdmissao\VaiBem\GestorEstabelecimento\back-end\src\model\index.js">
         <metrics statements="44" coveredstatements="41" conditionals="6" coveredconditionals="4" methods="0" coveredmethods="0"/>
@@ -590,7 +595,7 @@
         <line num="44" count="1" type="stmt"/>
       </file>
       <file name="usuario-model.js" path="C:\Users\eric_\Desktop\TesteAdmissao\VaiBem\GestorEstabelecimento\back-end\src\model\usuario-model.js">
-        <metrics statements="59" coveredstatements="59" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
+        <metrics statements="61" coveredstatements="61" conditionals="4" coveredconditionals="4" methods="4" coveredmethods="4"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -647,9 +652,11 @@
         <line num="54" count="4" type="cond" truecount="1" falsecount="0"/>
         <line num="55" count="3" type="stmt"/>
         <line num="56" count="3" type="stmt"/>
-        <line num="57" count="4" type="stmt"/>
-        <line num="58" count="4" type="stmt"/>
+        <line num="57" count="3" type="stmt"/>
+        <line num="58" count="3" type="stmt"/>
         <line num="59" count="4" type="stmt"/>
+        <line num="60" count="4" type="stmt"/>
+        <line num="61" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.repository">
@@ -728,7 +735,7 @@
       </file>
     </package>
     <package name="src.routes">
-      <metrics statements="58" coveredstatements="53" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="51" coveredstatements="46" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="estabelecimento-route.js" path="C:\Users\eric_\Desktop\TesteAdmissao\VaiBem\GestorEstabelecimento\back-end\src\routes\estabelecimento-route.js">
         <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
@@ -759,7 +766,7 @@
         <line num="12" count="1" type="stmt"/>
       </file>
       <file name="routes.js" path="C:\Users\eric_\Desktop\TesteAdmissao\VaiBem\GestorEstabelecimento\back-end\src\routes\routes.js">
-        <metrics statements="25" coveredstatements="25" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -778,13 +785,6 @@
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
         <line num="18" count="1" type="stmt"/>
-        <line num="19" count="1" type="stmt"/>
-        <line num="20" count="1" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
-        <line num="22" count="1" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="stmt"/>
       </file>
       <file name="usuario-route.js" path="C:\Users\eric_\Desktop\TesteAdmissao\VaiBem\GestorEstabelecimento\back-end\src\routes\usuario-route.js">
         <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>

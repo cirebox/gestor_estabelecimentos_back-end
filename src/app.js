@@ -20,7 +20,7 @@ app.use(cookieParser());
 app.use(favicon("./public/imagens/favicon.ico"));
 
 app.use(express.json());
-// app.use(express.urlencoded({ extended: true}))
+app.use(express.urlencoded({ extended: true }));
 
 //Carregar as rotas
 const indexRoute = require("./routes/index-route");
