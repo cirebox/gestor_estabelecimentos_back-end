@@ -1,5 +1,5 @@
 "use strict";
-const app = require("../app");
+const app = require("../src/app");
 const debug = require("debug")("GestorEstabelecimento:server");
 const http = require("http");
 

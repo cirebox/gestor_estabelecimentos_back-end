@@ -1,7 +1,7 @@
 "use strict";
-require('dotenv').config({
-  path: process.env.NODE_ENV === "test" ? ".env.test" : ".env"
-})
+require("dotenv").config({
+  path: process.env.NODE_ENV === "test" ? ".env.test" : ".env",
+});
 
 const express = require("express");
 const favicon = require("serve-favicon");
@@ -17,14 +17,14 @@ app.use(cors());
 app.use(cookieParser());
 
 //favicon
-app.use(favicon(__dirname + "/public/imagens/favicon.ico"));
+app.use(favicon("./public/imagens/favicon.ico"));
 
-app.use(express.json())
+app.use(express.json());
 // app.use(express.urlencoded({ extended: true}))
 
 //Carregar as rotas
-const indexRoute = require("./src/routes/index-route");
-const v1 = require("./src/routes/v1");
+const indexRoute = require("./routes/index-route");
+const v1 = require("./routes/routes");
 
 //Rotas
 app.use("/", indexRoute);
@@ -44,7 +44,7 @@ app.use(function (err, res, next) {
   res.status(err.code || 404).json({
     status: false,
     texto: "não existe",
-    message: err
+    message: err,
   });
 });
 
@@ -52,7 +52,7 @@ if (app.get("env") === "development") {
   app.use(function (err, res) {
     res.status(err.code || 500).json({
       status: false,
-      message: err
+      message: err,
     });
   });
 }
@@ -60,7 +60,7 @@ if (app.get("env") === "development") {
 app.use(function (err, res) {
   res.status(err.status || 500).json({
     status: false,
-    message: err.message
+    message: err.message,
   });
 });
 
