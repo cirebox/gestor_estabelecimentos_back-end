@@ -9,7 +9,12 @@ exports.valida = async (data) => {
 };
 
 exports.list = async (uf) => {
-  return await estabelecimento.findAll({ where: { uf } });
+  if (uf !== '') {
+    return await estabelecimento.findAll({ where: { uf } });
+  } else {
+    return await estabelecimento.findAll();
+  }
+  
 };
 
 exports.create = async (data) => {

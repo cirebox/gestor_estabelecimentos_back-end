@@ -4,7 +4,9 @@ const repository = require("../repository/estabelecimento-repository");
 exports.list = async (req, res, next) => {
   try {
     var uf = "";
-    if (req.query.uf != "") {
+    if (!req.query.uf) {
+      uf = "";
+    }else{
       uf = req.query.uf;
     }
     const data = await repository.list(uf);

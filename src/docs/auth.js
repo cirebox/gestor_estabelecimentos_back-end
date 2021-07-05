@@ -8,8 +8,8 @@
  *
  * @apiParamExample {json} Body
  * {
- *   "login": "admin@example.com",
- *   "senha": "123"
+ *   "email": "admin@example.com",
+ *   "password": "123"
  * }
  *
  * @apiSuccessExample {json} (200) Resposta

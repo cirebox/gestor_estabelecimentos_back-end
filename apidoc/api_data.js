@@ -28,7 +28,7 @@ define({ "api": [
       "examples": [
         {
           "title": "Body",
-          "content": "{\n  \"login\": \"admin@example.com\",\n  \"senha\": \"123\"\n}",
+          "content": "{\n  \"email\": \"admin@example.com\",\n  \"password\": \"123\"\n}",
           "type": "json"
         }
       ]
