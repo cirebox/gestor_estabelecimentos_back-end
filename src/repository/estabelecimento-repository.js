@@ -8,8 +8,8 @@ exports.valida = async (data) => {
   return validateErrors;
 };
 
-exports.list = async () => {
-  return await estabelecimento.findAll();
+exports.list = async (uf) => {
+  return await estabelecimento.findAll({ where: { uf } });
 };
 
 exports.create = async (data) => {
