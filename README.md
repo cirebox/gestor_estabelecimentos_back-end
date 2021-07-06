@@ -30,13 +30,8 @@ npm run dev
 
 ```
 
-[API Rodando aqui](http://161.35.105.228:3333/)
-
 o comando `npm run dev` irá rodar a api na porta 3100
 Você pode verificar isso abrindo seu navegador e navegando para: [http://localhost:3100/](http://localhost:3100/)
-
-### Documentação completa da API abaixo
-[Documentação](http://161.35.105.228/docvbgestor/)
 
 ### Usuário padrão para autenticação ###
 
