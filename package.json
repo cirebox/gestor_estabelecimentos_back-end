@@ -59,7 +59,7 @@
     "factory-girl": "^5.0.4",
     "faker": "^5.5.3",
     "jest": "^27.0.6",
-    "nodemon": "^2.0.9",
+    "nodemon": "^2.0.20",
     "prettier": "^2.3.2",
     "sequelize-cli": "^6.2.0",
     "sqlite3": "^5.0.2",
